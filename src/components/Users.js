@@ -4,7 +4,7 @@ export default function Navbar(props){
     return(
         <div>
             <h1>Ulanyjylar</h1>
-            <table className="table">
+            <table className={props.darkMode ? "table" : "table table-dark" }>
             <thead>
                 <tr>
                 <th scope="col">Ulanyjy ady</th>

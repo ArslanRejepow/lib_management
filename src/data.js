@@ -3,7 +3,7 @@ export default {
     "data": {
         "books": [
             {
-                "id": "181913649",
+                "id": '181913649',
                 "name": "Kitap 1",
                 "img": "https://i.imgflip.com/6y08d4.jpg",
                 "page_number": 96,
@@ -12,7 +12,7 @@ export default {
                 "about": "Hakynda1",
             },
             {
-                "id": "181913650",
+                "id": '181913650',
                 "name": "Kitap 2",
                 "img": "https://i.imgflip.com/6vnem7.jpg",
                 "page_number": 126,
@@ -23,10 +23,17 @@ export default {
         ],
         "users": [
             {
-                "id": 1,
+                "id": '1',
                 "name": "arslan",
                 "number": "+99361968693",
                 "book_number": 0,
+            }
+        ],
+        "records":[
+            {
+                "user_id": '1',
+                "book_id": '181913650',
+                "date": "22/10/22",
             }
         ]
     }

@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useId } from 'react'
 
 export default function AddBook(props){
     const [formData, setFormData] = React.useState({
+        'id' : useId(),
         'name' : '',
         'number': '',
         'book_number': 0,
