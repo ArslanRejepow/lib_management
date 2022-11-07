@@ -17,10 +17,21 @@ function App() {
 }
   const [currentPage, setCurrentPage] = React.useState('home')
 
-  const [books, setBooks] = React.useState(Data.data.books)
-  const [users, setUsers] = React.useState(Data.data.users)
+  const [books, setBooks] = React.useState({})
+  const [users, setUsers] = React.useState({})
   const [records, setRecords] = React.useState(Data.data.records)
-  console.log(records)
+
+  React.useEffect(() => {
+      fetch('http://localhost:5000/')
+      .then((response) => response.json())
+      .then((data) => setUsers(data['items']));
+      fetch('http://localhost:5000/books')
+      .then((response) => response.json())
+      .then((data) => setBooks(data));
+    },[]);
+  
+  console.log(books);
+
   return (
     <div className="App">
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} setCurrentPage={setCurrentPage} />

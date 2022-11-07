@@ -13,13 +13,13 @@ export default function Navbar(props){
                 </tr>
             </thead>
             <tbody>
-                {Object.keys(props.records).map((i, k) => (
+                {/* {Object.keys(props.records).map((i, k) => (
                     <tr>
                         <td>{props.users.find(x => x.id === props.records[i]['user_id']).name}</td>
                         <td>{props.books.find(x => x.id === props.records[i]['book_id']).name}</td>
                         <td>{props.records[i]['date']}</td>
                     </tr>
-                    ))}
+                    ))} */}
                 
             </tbody>
             </table>
